@@ -1,0 +1,23 @@
+.comment {
+    width: 100%;
+}
+.comment textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 1em;
+    resize: none;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+/* @media screen and (max-width: 480px) {
+    .comment textarea {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .comment textarea {
+        width: 100%;
+    }
+} */

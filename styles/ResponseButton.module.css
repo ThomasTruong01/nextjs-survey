@@ -1,0 +1,65 @@
+.selectionBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.selectionBox:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+.response {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.r11_nps:nth-child(2) > label {
+    border-radius: 1em 0 0 1em;
+}
+.r11_nps:last-child > label {
+    border-radius:  0 1em 1em 0;
+}
+.response input[type=checkbox],
+.response input[type=radio] {
+    display: none;
+}
+
+.response input[type=checkbox]:checked+.selectionBox,
+.response input[type=radio]:checked+.selectionBox {
+    background-color: black;
+    color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    .selectionBox {
+        border: 1px solid white;
+        color: white;
+        ;
+    }
+    .selectionBox:hover{
+        background-color: rgba(255, 255, 255, .5);
+    }
+    .response input[type=checkbox]:checked+.selectionBox,
+    .response input[type=radio]:checked+.selectionBox {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .r11_nps label {
+        width: 25%;
+        min-width: 64px;
+    }
+    .r11_nps:nth-child(2) > label{
+        border-radius: 1em 1em 0 0;
+    }
+    .r11_nps:last-child > label {
+        border-radius: 0 0 1em 1em;
+    }
+}
